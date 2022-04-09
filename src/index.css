@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Cascadia';
+	font-style: normal;
+	font-weight: 400;
+	src: url('assets/fonts/CascadiaCode.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Cascadia';
+	font-style: italic;
+	font-weight: 400;
+	src: url('assets/fonts/CascadiaCodeItalic.woff2') format('woff2');
+}
