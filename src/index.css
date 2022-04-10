@@ -15,3 +15,10 @@
 	font-weight: 400;
 	src: url('assets/fonts/CascadiaCodeItalic.woff2') format('woff2');
 }
+
+@font-face {
+	font-family: 'Cascadia';
+	font-style: italic;
+	font-weight: 200;
+	src: url('assets/fonts/CascadiaCode-ExtraLightItalic.woff2') format('woff2');
+}
