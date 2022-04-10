@@ -1,13 +1,13 @@
 import { Tab } from '../Tab/index.jsx'
-import { ReactLogo } from '../logos/ReactLogo.jsx'
-import { JavaScriptLogo } from '../logos/JavaScriptLogo.jsx'
-import { HTMLLogo } from '../logos/HTMLLogo.jsx'
-import { TypeScriptLogo } from '../logos/TypeScriptLogo.jsx'
-import { CSSLogo } from '../logos/CSSLogo.jsx'
+import { ReactLogo } from '../Logos/ReactLogo.jsx'
+import { JavaScriptLogo } from '../Logos/JavaScriptLogo.jsx'
+import { HTMLLogo } from '../Logos/HTMLLogo.jsx'
+import { TypeScriptLogo } from '../Logos/TypeScriptLogo.jsx'
+import { CSSLogo } from '../Logos/CSSLogo.jsx'
 
-export const Navbar = () => {
+export const Navbar = ({ ...props }) => {
   return (
-    <nav>
+    <nav {...props}>
       <ul className="flex">
         <Tab to="/">
           <ReactLogo className="fill-slate-200 h-4 w-auto mr-2"/>
