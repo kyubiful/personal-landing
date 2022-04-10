@@ -11,9 +11,8 @@ function App () {
     <div className="App">
       <div className="bg-slate-900 text-slate-200 w-screen h-screen font-cascadia">
         <header>
-          <Navbar />
+          <Navbar className="absolute w-full"/>
         </header>
-        <div className="flex justify-center mt-40">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -22,7 +21,6 @@ function App () {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
       </div>
     </div>
   )
