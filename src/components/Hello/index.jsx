@@ -16,7 +16,7 @@ export const Hello = () => {
           <Markup text="<p>" className="pl-16" />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center content-center h-auto max-w-4xl m-auto">
+      <div className="flex flex-col justify-center items-center content-center h-auto max-w-4xl w-full m-auto">
         <div>
           <p className="text-2xl">Hola <span className="text-4xl">👋🏻</span>, me llamo</p>
           <TextGradient text="Sergio Zabala" className="text-8xl leading-tight tracking-tight"/>
