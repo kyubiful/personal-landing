@@ -9,7 +9,7 @@ import { Navbar } from './components/Navbar/index.jsx'
 function App () {
   return (
     <div className="App">
-      <div className="bg-slate-900 text-slate-200 w-screen h-screen font-cascadia">
+      <div className="bg-slate-900 text-slate-200 w-screen h-auto font-cascadia">
         <header>
           <Navbar className="absolute w-full"/>
         </header>
