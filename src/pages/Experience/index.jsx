@@ -34,7 +34,7 @@ const JOBS = [
 
 export const Experience = () => {
   return (
-    <div className="pt-16 pb-6 h-full flex flex-col">
+    <div className="pt-16 pb-6 h-screen flex flex-col">
       <div className="h-40 flex flex-col justify-between">
         <div>
           <Markup text="<html>" className="pl-10" />
