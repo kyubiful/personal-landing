@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cm": "cz"
+    "cm": "cz",
+    "lint": "eslint . --fix --ext .jsx,.js"
   },
   "dependencies": {
     "react": "^17.0.2",
