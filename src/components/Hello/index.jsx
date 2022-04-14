@@ -22,10 +22,10 @@ export const Hello = () => {
           <TextGradient text="Sergio Zabala" className="text-8xl leading-tight tracking-tight"/>
           <p className="text-2xl text-right">Desarollador Web</p>
           <div className="flex justify-end mt-2">
-            <a href="https://github.com/kyubiful" target="_blank" rel="noreferrer">
+            <a className="focus:outline-none" href="https://github.com/kyubiful" target="_blank" rel="noreferrer">
               <GitHubLogo className="h-8 fill-slate-200 mr-3 hover:fill-white transition" />
             </a>
-            <a href="https://www.linkedin.com/in/sergio-zabala-mu%C3%B1oz-56611ba3/" target="_blank" rel="noreferrer">
+            <a className="focus:outline-none" href="https://www.linkedin.com/in/sergio-zabala-mu%C3%B1oz-56611ba3/" target="_blank" rel="noreferrer">
               <LinkedinLogo className="h-8 fill-slate-200 hover:fill-white transition" background="fill-slate-900" />
             </a>
           </div>
