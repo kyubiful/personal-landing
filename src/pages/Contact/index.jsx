@@ -11,14 +11,25 @@ export const Contact = () => {
           <Markup text="<body>" className="pl-12" />
         </div>
         <div>
-          <Markup text="<form>" className="pl-14" />
+          <Markup text="<h2>" className="pl-14" />
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
         <Title title="Contacto" />
+      </div>
+      <div className="flex flex-col justify-between">
+        <div>
+          <Markup text="</h2>" className="pl-14" />
+        </div>
+        <div>
+          <Markup text="<form>" className="pl-16" />
+        </div>
+      </div>
+      <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
         <ContactForm />
       </div>
       <div className="h-40 flex flex-col justify-between">
+
         <div>
           <Markup text="</form>" className="pl-14" />
         </div>
