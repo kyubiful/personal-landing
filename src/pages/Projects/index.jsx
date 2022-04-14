@@ -54,32 +54,6 @@ const PROJECTS = [
       'TailwindCSS',
       'Vercel'
     ]
-  },
-  {
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
-  },
-  {
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
   }
 ]
 
@@ -145,6 +119,16 @@ export const Projects = () => {
           )
         })
       }
+      <div className="h-40 flex flex-col justify-between">
+        <div>
+          <Markup text="</div>" className="pl-16" />
+          <Markup text="</div>" className="pl-14" />
+        </div>
+        <div>
+          <Markup text="</body>" className="pl-12" />
+          <Markup text="</html>" className="pl-10" />
+        </div>
+      </div>
     </div>
   )
 }
