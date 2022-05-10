@@ -8,7 +8,7 @@ import { CSSLogo } from '../Logos/CSSLogo.jsx'
 export const Navbar = ({ ...props }) => {
   return (
     <nav {...props}>
-      <ul className="flex">
+      <ul className="flex h-full">
         <Tab to="/">
           <ReactLogo className="fill-slate-200 h-4 w-auto mr-2"/>
           hola.jsx
