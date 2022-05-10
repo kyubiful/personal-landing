@@ -22,6 +22,15 @@ export const Contact = () => {
           <Markup text="</h2>" className="pl-14" />
         </div>
         <div>
+          <Markup text="<p>" className="pl-14" />
+        </div>
+        <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
+          <p>Si tienes otra petición o pregunta, no dudes en utilizar el formulario.</p>
+        </div>
+        <div>
+          <Markup text="</p>" className="pl-14" />
+        </div>
+        <div>
           <Markup text="<form>" className="pl-16" />
         </div>
       </div>
