@@ -14,6 +14,9 @@ function App () {
 
   window.addEventListener('resize', () => {
     setScreenWidth(window.innerWidth)
+    if (screenWidth > 1024 && menuMobileIsOpen === true) {
+      setMenuMobileIsOpen(false)
+    }
   })
 
   const toggleMenu = () => {
@@ -24,7 +27,7 @@ function App () {
     <div className="App">
       <div className="bg-slate-900 text-slate-200 w-screen h-auto font-cascadia ">
         <header>
-          { screenWidth < 1024 && <div onClick={() => toggleMenu()} className="fixed top-4 left-auto right-4"><button>test</button></div>}
+          { screenWidth < 1024 && <div onClick={() => toggleMenu()} className="fixed top-4 left-auto right-4 z-10"><button>test</button></div>}
           { screenWidth > 1024 ? <Navbar className='absolute w-full h-10'/> : <NavbarMobile isActive={menuMobileIsOpen}/>}
         </header>
           <Routes>
