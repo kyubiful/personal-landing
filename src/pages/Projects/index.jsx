@@ -1,9 +1,10 @@
 import { Title } from '../../components/Title/index.jsx'
 import { Markup } from '../../components/Markup/index.jsx'
-import { ProjectCard } from '../../components/ProjectCard/index.jsx'
+import { ProjectCards } from '../../components/ProjectCards/index.jsx'
 
 const PROJECTS = [
   {
+    id: 0,
     name: 'Coach Web',
     text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
     gitHubUrl: '',
@@ -17,6 +18,7 @@ const PROJECTS = [
     ]
   },
   {
+    id: 1,
     name: 'Coach Web',
     text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
     gitHubUrl: '',
@@ -30,6 +32,7 @@ const PROJECTS = [
     ]
   },
   {
+    id: 2,
     name: 'Coach Web',
     text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
     gitHubUrl: '',
@@ -43,6 +46,7 @@ const PROJECTS = [
     ]
   },
   {
+    id: 3,
     name: 'Coach Web',
     text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
     gitHubUrl: '',
@@ -57,17 +61,17 @@ const PROJECTS = [
   }
 ]
 
-export const Projects = () => {
+export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
   return (
-    <div className="pt-16 pb-6 h-auto flex flex-col">
+    <div className="pb-2 pt-2 lg:pt-16 lg:pb-6 h-auto flex flex-col">
       <div className="h-40 flex flex-col justify-between">
         <div>
-          <Markup text="<html>" className="pl-10" />
-          <Markup text="<body>" className="pl-12" />
+          <Markup text="<html>" className="pl-1 lg:pl-10" />
+          <Markup text="<body>" className="pl-3 lg:pl-12" />
         </div>
         <div>
-          <Markup text="<div>" className="pl-14" />
-          <Markup text="<h1>" className="pl-16" />
+          <Markup text="<div>" className="pl-5 lg:pl-14" />
+          <Markup text="<h1>" className="pl-7 lg:pl-16" />
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
@@ -75,58 +79,58 @@ export const Projects = () => {
       </div>
       <div className="flex flex-col justify-between">
         <div>
-          <Markup text="</h1>" className="pl-16" />
-          <Markup text="<div>" className="pl-16" />
+          <Markup text="</h1>" className="pl-7 lg:pl-16" />
+          <Markup text="<div>" className="pl-7 lg:pl-16" />
         </div>
       </div>
       {
         PROJECTS.map((project, index) => {
           if (index !== 0) {
             return (
-              <>
+              <div key={project.id}>
                 <div className="flex flex-col justify-between">
                   <div>
-                    <Markup text="<div>" className="pl-20" />
+                    <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
                 <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-                  <ProjectCard key={index} index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
+                  <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
                 </div>
                 <div className="flex flex-col justify-between">
                   <div>
-                    <Markup text="</div>" className="pl-20" />
+                    <Markup text="</div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
-              </>
+              </div>
             )
           }
           return (
-            <>
+            <div key={project.id}>
               <div className="flex flex-col justify-between">
                   <div>
-                    <Markup text="<div>" className="pl-20" />
+                    <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
               <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-                <ProjectCard key={index} index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
+                <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
               </div>
               <div className="flex flex-col justify-between">
                 <div>
-                  <Markup text="</div>" className="pl-20" />
+                  <Markup text="</div>" className="pl-9 lg:pl-20" />
                 </div>
               </div>
-            </>
+            </div>
           )
         })
       }
       <div className="h-40 flex flex-col justify-between">
         <div>
-          <Markup text="</div>" className="pl-16" />
-          <Markup text="</div>" className="pl-14" />
+          <Markup text="</div>" className="pl-7 lg:pl-16" />
+          <Markup text="</div>" className="pl-5 lg:pl-14" />
         </div>
         <div>
-          <Markup text="</body>" className="pl-12" />
-          <Markup text="</html>" className="pl-10" />
+          <Markup text="</body>" className="pl-3 lg:pl-12" />
+          <Markup text="</html>" className="pl-1 lg:pl-10" />
         </div>
       </div>
     </div>

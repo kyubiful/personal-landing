@@ -34,30 +34,30 @@ const JOBS = [
 
 export const Experience = () => {
   return (
-    <div className="pt-16 pb-6 h-screen flex flex-col">
+    <div className="pt-2 pb-2 lg:pt-16 lg:pb-6 lg:h-screen flex flex-col">
       <div className="h-40 flex flex-col justify-between">
         <div>
-          <Markup text="<html>" className="pl-10" />
-          <Markup text="<body>" className="pl-12" />
+          <Markup text="<html>" className="pl-1 lg:pl-10" />
+          <Markup text="<body>" className="pl-3 lg:pl-12" />
         </div>
         <div>
-          <Markup text="<div>" className="pl-14" />
-          <Markup text="<h1>" className="pl-16" />
+          <Markup text="<div>" className="pl-5 lg:pl-14" />
+          <Markup text="<h1>" className="pl-7 lg:pl-16" />
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-        <Title title="Experiencia" />
+        <Title className="mb-5" title="Experiencia" />
       </div>
       <div className="flex flex-col justify-between">
         <div>
-          <Markup text="</h1>" className="pl-16" />
-          <Markup text="<div>" className="pl-16" />
+          <Markup text="</h1>" className="pl-7 lg:pl-16" />
+          <Markup text="<div>" className="pl-7 lg:pl-16" />
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-5xl w-full m-auto pr-6 pl-6">
-        <div className="flex justify-between">
+        <div className="flex flex-col justify-between mb-5 lg:flex-row gap-10 lg:gap-0">
           <div>
-            <h3 className="mb-10 text-2xl">Tecnologías</h3>
+            <h3 className="mb-10 mt-5 text-lg lg:text-2xl md:text-2xl max-w-md m-auto">Tecnologías</h3>
             <TechnologiesList />
           </div>
           <div className="flex justify-center items-center gap-2 max-h-80 h-full">
@@ -91,12 +91,12 @@ export const Experience = () => {
       </div>
       <div className="h-40 flex flex-col justify-between">
         <div>
-          <Markup text="</div>" className="pl-16" />
-          <Markup text="</div>" className="pl-14" />
+          <Markup text="</div>" className="pl-7 lg:pl-16" />
+          <Markup text="</div>" className="pl-5 lg:pl-14" />
         </div>
         <div>
-          <Markup text="</body>" className="pl-12" />
-          <Markup text="</html>" className="pl-10" />
+          <Markup text="</body>" className="pl-3 lg:pl-12" />
+          <Markup text="</html>" className="pl-1 lg:pl-10" />
         </div>
       </div>
     </div>

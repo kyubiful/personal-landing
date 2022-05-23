@@ -15,11 +15,11 @@ import { CSSLogo } from '../Logos/CSSLogo.jsx'
 import { JavaScriptLogo } from '../Logos/JavaScriptLogo.jsx'
 import { GitHubLogo } from '../Logos/GitHubLogo.jsx'
 
-const style = 'h-10 w-max fill-slate-200'
+const style = 'h-8 md:h-10 lg:h-10 w-max fill-slate-200'
 
 export const TechnologiesList = () => {
   return (
-    <div className="flex flex-wrap max-w-md w-full gap-6">
+    <div className="flex flex-wrap max-w-md w-full gap-6 m-auto">
       <HTMLLogo className={style} background='fill-slate-900' />
       <CSSLogo className={style} background='fill-slate-900' />
       <JavaScriptLogo className={style} background='fill-slate-900' />
