@@ -6,27 +6,30 @@ import { HTMLLogo } from '../Logos/HTMLLogo.jsx'
 import { TypeScriptLogo } from '../Logos/TypeScriptLogo.jsx'
 import { CSSLogo } from '../Logos/CSSLogo.jsx'
 
-export const NavbarMobile = ({ isActive, ...props }) => {
+export const NavbarMobile = ({ isActive, setMenuMobileIsOpen, menuMobileIsOpen, ...props }) => {
+  const closeMenuMobile = () => {
+    setMenuMobileIsOpen(false)
+  }
   return (
-    <nav {...props} className={'absolute h-full bg-slate-800 z-10 ' + (isActive === false ? 'hidden' : 'block')}>
+    <nav {...props} className={'fixed h-full bg-slate-800 z-30 ' + (isActive === false ? 'hidden' : 'block')}>
       <ul className="flex flex-col w-80 h-full">
-        <Tab to="/">
+        <Tab onClick={closeMenuMobile} to="/">
           <ReactLogo className="fill-slate-200 h-4 w-auto mr-2"/>
           hola.jsx
         </Tab>
-        <Tab to="/about">
+        <Tab onClick={closeMenuMobile} to="/about">
           <JavaScriptLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-800/100"/>
           sobre_mi.js
         </Tab>
-        <Tab to="/experience">
+        <Tab onClick={closeMenuMobile} to="/experience">
           <HTMLLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-900/100"/>
           experiencia.html
         </Tab>
-        <Tab to="/projects">
+        <Tab onClick={closeMenuMobile} to="/projects">
           <TypeScriptLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-800/100"/>
           proyectos.ts
         </Tab>
-        <Tab to="/contact">
+        <Tab onClick={closeMenuMobile} to="/contact">
           <CSSLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-900/100"/>
           contacto.css
         </Tab>
