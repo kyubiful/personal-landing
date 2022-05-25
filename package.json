@@ -6,17 +6,22 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cm": "cz",
-    "lint": "eslint . --fix --ext .jsx,.js"
+    "cm": "vitest --watch=false && cz",
+    "lint": "eslint . --fix --ext .jsx,.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
     "@vitejs/plugin-react": "^1.0.7",
     "autoprefixer": "^10.4.4",
+    "c8": "^7.11.3",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji-conventional": "^1.0.1",
@@ -26,9 +31,11 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
     "eslint-plugin-react": "^7.29.4",
+    "jsdom": "^19.0.0",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
-    "vite": "^2.9.0"
+    "vite": "^2.9.0",
+    "vitest": "^0.12.9"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
