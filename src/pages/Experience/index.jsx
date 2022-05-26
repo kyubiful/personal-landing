@@ -46,7 +46,7 @@ export const Experience = () => {
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-        <Title className="mb-5" title="Experiencia" />
+        <Title className="mb-5" text="Experiencia" />
       </div>
       <div className="flex flex-col justify-between">
         <div>

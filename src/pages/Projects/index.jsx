@@ -75,7 +75,7 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-        <Title title="Proyectos" />
+        <Title text="Proyectos" />
       </div>
       <div className="flex flex-col justify-between">
         <div>
