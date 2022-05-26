@@ -6,7 +6,9 @@ export const OpinionCard = ({ name, company, text, companyUrl }) => {
       <div className="transform h-full transition-all rounded-xl w-full p-2 mb-2">
         <div className="h-full w-full bg-slate-100 dark:bg-slate-900 rounded-lg p-4">
           <h3 className="text-m">{name}</h3>
-          <h5 className="text-sm"><a href={companyUrl}>{company}</a></h5>
+          <h5 className="text-sm">
+            <a data-testid="companyUrl" href={companyUrl}>{company}</a>
+          </h5>
           <p className="italic text-xs mt-1">“{text}”</p>
         </div>
       </div>

@@ -1,11 +1,21 @@
-import { test, expect } from 'vitest'
-import { render } from '@testing-library/react'
+import { expect, it, describe, beforeEach } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { TextGradient } from './index.jsx'
 
-test('render TextGradient component correctly', () => {
+describe('Testing TextGradient component', () => {
   const title = 'Test'
-  const className = 'test'
-  const el = render(<TextGradient text={title} className={className}/>)
-  el.getByText('Test')
-  expect(el.getByText('Test').classList.contains('test')).toBe(true)
+  const className = 'testClassName testClassName2'
+
+  beforeEach(() => {
+    render(<TextGradient text={title} className={className}/>)
+  })
+
+  it('should render title correctly', () => {
+    expect(screen.getByText('Test')).toBeInTheDocument()
+  })
+
+  it('should add className prop to children', () => {
+    expect(screen.getByText('Test')).toHaveClass('testClassName')
+    expect(screen.getByText('Test')).toHaveClass('testClassName2')
+  })
 })

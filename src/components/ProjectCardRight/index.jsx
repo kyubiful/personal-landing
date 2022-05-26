@@ -15,10 +15,10 @@ export const ProjectCardRight = ({ className, name, text, gitHubUrl, webUrl, tec
             <div className="px-4 py-3 m-auto h-28 max-w-lg w-full bg-slate-600 rounded-xl flex flex-col justify-between z-20">
               <p className="max-w-md text-sm w-screen">{text}</p>
               <div className="flex justify-end w-full gap-2">
-                <a className="focus:outline-none" href={gitHubUrl}>
+                <a data-testid="gitHubUrl" className="focus:outline-none" href={gitHubUrl}>
                   <GitHubLogo className="fill-slate-200 w-6 hover:fill-white transition" />
                 </a>
-                <a className="focus:outline-none" href={webUrl}>
+                <a data-testid="webUrl" className="focus:outline-none" href={webUrl}>
                   <GitHubLogo className="fill-slate-200 w-6 hover:fill-white transition" />
                 </a>
               </div>

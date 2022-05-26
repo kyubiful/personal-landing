@@ -1,22 +1,32 @@
-import { test, expect } from 'vitest'
-import { render } from '@testing-library/react'
+import { describe, it, expect, beforeEach } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { InputForm } from './index.jsx'
 
-test('render InputForm component correctly', () => {
-  const data = {
-    name: 'text',
-    placeholder: 'placeholder',
-    type: 'submit'
-  }
-  const el = render(
-    <InputForm
-      type={data.type}
-      placeholder={data.placeholder}
-      name={data.name}
-    />
-  )
+describe('render InputForm component', () => {
+  beforeEach(() => {
+    const data = {
+      name: 'text',
+      placeholder: 'placeholder',
+      type: 'submit'
+    }
+    render(
+      <InputForm
+        type={data.type}
+        placeholder={data.placeholder}
+        name={data.name}
+      />
+    )
+  })
 
-  expect(el.container.getElementsByTagName('input')[0].getAttribute('type')).toBe('submit')
-  expect(el.container.getElementsByTagName('input')[0].getAttribute('placeholder')).toBe('placeholder')
-  expect(el.container.getElementsByTagName('input')[0].getAttribute('name')).toBe('text')
+  it('render type attribute', () => {
+    expect(screen.getByTestId('inputForm').getAttribute('type')).toBe('submit')
+  })
+
+  it('render placeholder', () => {
+    expect(screen.getByTestId('inputForm').getAttribute('placeholder')).toBe('placeholder')
+  })
+
+  it('render name attribute', () => {
+    expect(screen.getByTestId('inputForm').getAttribute('name')).toBe('text')
+  })
 })

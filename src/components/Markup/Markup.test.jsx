@@ -1,13 +1,13 @@
-import { test } from 'vitest'
-import { render } from '@testing-library/react'
+import { describe, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Markup } from './index.jsx'
 
-test('renders Markup component correctly', () => {
-  const text = 'h1'
-
-  const el = render(
-    <Markup text={text} />
-  )
-
-  el.getAllByText('h1')
+describe('render Markup component', () => {
+  it('render text', () => {
+    const text = 'h1'
+    render(<Markup text={text} />)
+    expect(screen.getAllByText('h1').length).toBe(2)
+    expect(screen.getAllByText('h1')[0]).toBeInTheDocument()
+    expect(screen.getAllByText('h1')[1]).toBeInTheDocument()
+  })
 })

@@ -1,34 +1,51 @@
-import { test, expect } from 'vitest'
-import { render } from '@testing-library/react'
+import { describe, expect, it, beforeEach } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { ProjectCardRight } from './index.jsx'
 
-test('render ProjectCardRight correctly', () => {
-  const project = {
-    id: 0,
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: 'github.com/kyubiful',
-    webUrl: 'kyubi.dev',
-    technologies: [
-      'ReactJS',
-      'Vercel'
-    ]
-  }
+describe('render ProjectCardRight component', () => {
+  beforeEach(() => {
+    const project = {
+      id: 0,
+      name: 'Coach Web',
+      text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
+      gitHubUrl: 'github.com/kyubiful',
+      webUrl: 'kyubi.dev',
+      technologies: [
+        'ReactJS',
+        'Vercel'
+      ]
+    }
 
-  const el = render(
-    <ProjectCardRight
-      text={project.text}
-      name={project.name}
-      gitHubUrl={project.gitHubUrl}
-      webUrl={project.webUrl}
-      technologies={project.technologies}
-    />
-  )
+    render(
+      <ProjectCardRight
+        text={project.text}
+        name={project.name}
+        gitHubUrl={project.gitHubUrl}
+        webUrl={project.webUrl}
+        technologies={project.technologies}
+      />
+    )
+  })
 
-  el.getByText('Coach Web')
-  el.getByText('Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.')
-  el.getByText('ReactJS')
-  el.getByText('Vercel')
-  expect(el.container.getElementsByTagName('a')[0].getAttribute('href')).toBe('github.com/kyubiful')
-  expect(el.container.getElementsByTagName('a')[1].getAttribute('href')).toBe('kyubi.dev')
+  it('render project name', () => {
+    expect(screen.getByText('Coach Web')).toBeInTheDocument()
+  })
+
+  it('render project info', () => {
+    expect(screen.getByText('Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.')).toBeInTheDocument()
+  })
+
+  it('render technologies list', () => {
+    expect(screen.getByText('ReactJS')).toBeInTheDocument()
+    expect(screen.getByText('Vercel')).toBeInTheDocument()
+  })
+
+  it('render webUrl', () => {
+    expect(screen.getByTestId('webUrl').getAttribute('href')).toBe('kyubi.dev')
+  })
+
+  it('render gitHubUrl', () => {
+    expect(screen.getByTestId('gitHubUrl').getAttribute('href')).toBe('github.com/kyubiful')
+  })
 })
+
