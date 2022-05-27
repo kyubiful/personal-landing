@@ -5,8 +5,8 @@ import { Markup } from '../Markup/index.jsx'
 
 export const Hello = () => {
   return (
-    <div className="pt-2 pb-2 lg:pt-16 lg:pb-6 h-screen flex flex-col justify-between">
-      <div className="h-80 flex flex-col justify-between">
+    <div className="pt-2 pb-2 lg:pt-12 lg:pb-2 min-h-screen h-full flex flex-col justify-between">
+      <div className="h-72 flex flex-col justify-between">
         <div>
           <Markup text="<html>" className="pl-1 lg:pl-10" />
           <Markup text="<body>" className="pl-3 lg:pl-12" />
@@ -31,7 +31,7 @@ export const Hello = () => {
           </div>
         </div>
       </div>
-      <div className="h-80 flex flex-col justify-between">
+      <div className="h-72 flex flex-col justify-between">
         <div>
           <Markup text="</p>" className="pl-7 lg:pl-16" />
           <Markup text="</div>" className="pl-5 lg:pl-14" />

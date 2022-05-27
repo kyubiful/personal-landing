@@ -29,7 +29,7 @@ function App () {
       <div className="bg-slate-900 text-slate-200 w-screen h-auto font-cascadia ">
         <header>
           { screenWidth < 1024 && <div onClick={() => toggleMenu()} className="fixed top-0 left-auto right-0 z-10"><BurgerMenu menuState={menuMobileIsOpen} /></div>}
-          { screenWidth > 1024 ? <Navbar className='absolute w-full h-10'/> : <NavbarMobile setMenuMobileIsOpen={setMenuMobileIsOpen} menuMobileIsOpen={menuMobileIsOpen} isActive={menuMobileIsOpen}/>}
+          { screenWidth > 1024 ? <Navbar className='fixed bg-slate-900 z-40 w-full h-10 border-t border-slate-700'/> : <NavbarMobile setMenuMobileIsOpen={setMenuMobileIsOpen} menuMobileIsOpen={menuMobileIsOpen} isActive={menuMobileIsOpen}/>}
         </header>
           <Routes>
             <Route path="/" element={<Home />} />

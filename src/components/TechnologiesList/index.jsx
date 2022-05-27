@@ -15,7 +15,7 @@ import { CSSLogo } from '../Logos/CSSLogo.jsx'
 import { JavaScriptLogo } from '../Logos/JavaScriptLogo.jsx'
 import { GitHubLogo } from '../Logos/GitHubLogo.jsx'
 
-const style = 'h-8 md:h-10 lg:h-10 w-max fill-slate-200'
+const style = 'h-8 md:h-10 lg:h-10 w-auto fill-slate-200'
 
 export const TechnologiesList = () => {
   return (

@@ -63,7 +63,7 @@ const PROJECTS = [
 
 export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
   return (
-    <div className="pb-2 pt-2 lg:pt-16 lg:pb-6 h-auto flex flex-col">
+    <div className="pb-2 pt-2 lg:pt-12 lg:pb-2 h-full flex flex-col">
       <div className="h-40 flex flex-col justify-between">
         <div>
           <Markup text="<html>" className="pl-1 lg:pl-10" />

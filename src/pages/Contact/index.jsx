@@ -4,7 +4,7 @@ import { Markup } from '../../components/Markup/index.jsx'
 
 export const Contact = () => {
   return (
-    <div className="pb-2 pt-2 lg:pt-16 lg:pb-6 h-screen flex flex-col">
+    <div className="pb-2 pt-2 lg:pt-12 lg:pb-2 h-full flex flex-col">
       <div className="h-40 flex flex-col justify-between">
         <div>
           <Markup text="<html>" className="pl-1 lg:pl-10" />
