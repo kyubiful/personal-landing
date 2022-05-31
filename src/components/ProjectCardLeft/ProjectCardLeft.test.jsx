@@ -2,7 +2,7 @@ import { expect, it, beforeEach, describe } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { ProjectCardLeft } from './index.jsx'
 
-describe('render ProjectCardLeft component', () => {
+describe('render ProjectCarLeft component', () => {
   beforeEach(() => {
     const project = {
       id: 0,

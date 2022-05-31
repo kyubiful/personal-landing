@@ -1,65 +1,7 @@
 import { Title } from '../../components/Title/index.jsx'
 import { Markup } from '../../components/Markup/index.jsx'
 import { ProjectCards } from '../../components/ProjectCards/index.jsx'
-
-const PROJECTS = [
-  {
-    id: 0,
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
-  },
-  {
-    id: 1,
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
-  },
-  {
-    id: 2,
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
-  },
-  {
-    id: 3,
-    name: 'Coach Web',
-    text: 'Aplicación web para ofrecer servicios de coach personal y ejecutivo con un blog personal.',
-    gitHubUrl: '',
-    webUrl: '',
-    technologies: [
-      'ReactJS',
-      'MongoDB',
-      'Express',
-      'TailwindCSS',
-      'Vercel'
-    ]
-  }
-]
+import { PROJECTS } from '../../data/projects.js'
 
 export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
   return (
@@ -70,11 +12,11 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
           <Markup text="<body>" className="pl-3 lg:pl-12" />
         </div>
         <div>
-          <Markup text="<div>" className="pl-5 lg:pl-14" />
+          <Markup text="<section>" className="pl-5 lg:pl-14" />
           <Markup text="<h1>" className="pl-7 lg:pl-16" />
         </div>
       </div>
-      <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
+      <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
         <Title text="Proyectos" />
       </div>
       <div className="flex flex-col justify-between">
@@ -93,8 +35,8 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
                     <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
-                <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-                  <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
+                <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
+                  <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} imageUrl={project.imageUrl} />
                 </div>
                 <div className="flex flex-col justify-between">
                   <div>
@@ -111,8 +53,8 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
                     <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
-              <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6">
-                <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} />
+              <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
+                <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} imageUrl={project.imageUrl} />
               </div>
               <div className="flex flex-col justify-between">
                 <div>
@@ -126,7 +68,7 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
       <div className="h-40 flex flex-col justify-between">
         <div>
           <Markup text="</div>" className="pl-7 lg:pl-16" />
-          <Markup text="</div>" className="pl-5 lg:pl-14" />
+          <Markup text="</section>" className="pl-5 lg:pl-14" />
         </div>
         <div>
           <Markup text="</body>" className="pl-3 lg:pl-12" />

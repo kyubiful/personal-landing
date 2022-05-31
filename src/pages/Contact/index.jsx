@@ -14,7 +14,7 @@ export const Contact = () => {
           <Markup text="<h2>" className="pl-5 lg:pl-14" />
         </div>
       </div>
-      <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
+      <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6 animate-fade-in">
         <Title text="Contacto" />
       </div>
       <div className="flex flex-col justify-between">
@@ -24,7 +24,7 @@ export const Contact = () => {
         <div>
           <Markup text="<p>" className="pl-5 lg:pl-14" />
         </div>
-        <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
+        <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6 animate-fade-in">
           <p className="text-sm">Si tienes otra petición o pregunta, no dudes en utilizar el formulario.</p>
         </div>
         <div>
@@ -34,7 +34,7 @@ export const Contact = () => {
           <Markup text="<form>" className="pl-7 lg:pl-16" />
         </div>
       </div>
-      <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6">
+      <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6 animate-fade-in">
         <ContactForm />
       </div>
       <div className="h-40 flex flex-col justify-between">

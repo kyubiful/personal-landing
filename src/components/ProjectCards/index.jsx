@@ -3,7 +3,7 @@ import { ProjectCardRight } from '../ProjectCardRight/index.jsx'
 import { ProjectCardMobile } from '../ProjectCardMobile/index.jsx'
 import { useState } from 'react'
 
-export const ProjectCards = ({ index, name, text, gitHubUrl, webUrl, technologies = [] }) => {
+export const ProjectCards = ({ index, name, text, gitHubUrl, webUrl, technologies = [], imageUrl = '' }) => {
   const [screenWidthProject, setScreenWidthProject] = useState(window.innerWidth)
 
   window.addEventListener('resize', () => {
@@ -14,22 +14,22 @@ export const ProjectCards = ({ index, name, text, gitHubUrl, webUrl, technologie
   if (num % 2 === 0) {
     if (screenWidthProject > 1024) {
       return (
-        <ProjectCardRight name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} />
+        <ProjectCardRight name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} imageUrl={imageUrl} />
       )
     } else {
       return (
-        <ProjectCardMobile name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} />
+        <ProjectCardMobile name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} imageUrl={imageUrl} />
       )
     }
   }
   if (num % 2 !== 0) {
     if (screenWidthProject > 1024) {
       return (
-        <ProjectCardLeft name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} />
+        <ProjectCardLeft name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} imageUrl={imageUrl} />
       )
     } else {
       return (
-        <ProjectCardMobile name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies} />
+        <ProjectCardMobile name={name} text={text} gitHubUrl={gitHubUrl} webUrl={webUrl} technologies={technologies}imageUrl={imageUrl} />
       )
     }
   }
