@@ -1,8 +1,6 @@
 export const PopupCard = ({ status, message, className, active }) => {
   let cardClass = ''
 
-  console.log(status)
-
   if (status === 500) {
     cardClass += 'bg-slate-600 '
   } else {
