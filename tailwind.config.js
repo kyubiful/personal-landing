@@ -9,6 +9,12 @@ module.exports = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
         },
+        fadeInPopup: {
+          '0%': { opacity: '0' },
+          '20%': { opacity: '1' },
+          '80%': { opacity: '1' },
+          '100%': { opacity: '0' }
+        },
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
           '10%': { transform: 'rotate(0.0deg)' },
@@ -41,7 +47,8 @@ module.exports = {
         'waving-hand': 'wave 2s linear',
         writing: 'typing 3s steps(14), blink .5s infinite step-end alternate',
         'display-text': 'displayText 1.5s steps(1)',
-        'open-mobile-menu': 'openMobileMenu .2s linear'
+        'open-mobile-menu': 'openMobileMenu .2s linear',
+        popup: 'fadeInPopup 3s linear'
       }
     },
     fontFamily: {
