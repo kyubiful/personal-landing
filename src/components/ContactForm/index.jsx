@@ -45,7 +45,7 @@ export const ContactForm = () => {
       body: JSON.stringify(formData)
     }
 
-    fetch('http://localhost:4000/api/mail/send', options)
+    fetch('https://kyubi-mailer.herokuapp.com/api/mail/send', options)
       .then(res => res.json())
       .then(data => {
         setData(data)
