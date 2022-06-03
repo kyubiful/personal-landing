@@ -2,6 +2,7 @@ import { InputForm } from '../InputForm/index.jsx'
 import { TextAreaForm } from '../TextAreaForm/index.jsx'
 import { PopupCard } from '../PopupCard/index.jsx'
 import { useState } from 'react'
+import { sendMail } from '../../services/mailer.js'
 
 export const ContactForm = () => {
   const [popupActive, setPopupActive] = useState(false)
@@ -14,51 +15,54 @@ export const ContactForm = () => {
     }, 3000)
   }
 
+  const verifyForm = (event) => {
+    if (event.target.name.value.length === 0) {
+      setData({ status: 400, msg: 'Error: El campo del nombre está vacío' })
+      togglePopup()
+      return null
+    }
+    if (event.target.from.value.length === 0) {
+      setData({ status: 400, msg: 'Error: El campo del email está vacío' })
+      togglePopup()
+      return null
+    }
+    if (event.target.from.value.length !== 0 && event.target.from.validity.valid === false) {
+      setData({ status: 400, msg: 'Error: Email incorrecto' })
+      togglePopup()
+      return null
+    }
+    if (event.target.text.value.length === 0) {
+      setData({ status: 400, msg: 'Error: El campo del texto está vacío' })
+      togglePopup()
+      return null
+    }
+  }
+
   const onSubmit = (e) => {
     e.preventDefault()
     const formData = Object.fromEntries(new FormData(e.target))
 
-    if (e.target.name.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del nombre está vacío' })
-      return null
-    }
-    if (e.target.from.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del email está vacío' })
-      return null
-    }
-    if (e.target.from.value.length !== 0 && e.target.from.validity.valid === false) {
-      setData({ status: 400, msg: 'Error: Email incorrecto' })
-      return null
-    }
-    if (e.target.text.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del texto está vacío' })
+    if (verifyForm(e) === null) {
       return null
     }
 
     formData.to = 'ser.zabala@gmail.com'
 
-    const options = {
-      method: 'post',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    }
-
-    fetch('https://kyubi-mailer.herokuapp.com/api/mail/send', options)
-      .then(res => res.json())
+    sendMail(formData)
       .then(data => {
         setData(data)
         if (data.status === 200) {
           e.target.name.value = ''
           e.target.from.value = ''
           e.target.text.value = ''
+
+          togglePopup()
         }
       })
 
     setTimeout(() => {
       setData({ status: 400, msg: 'Error' })
-    }, 3000)
+    }, 4000)
   }
 
   return (
@@ -68,7 +72,7 @@ export const ContactForm = () => {
         <InputForm type="email" name="from" placeholder="Email" />
         <TextAreaForm name="text" placeholder="Texto" />
         <div className="flex justify-end">
-          <InputForm type="submit" onClick={togglePopup} />
+          <InputForm type="submit" />
         </div>
       </form>
       <PopupCard message={data.msg} status={data.status} active={popupActive} className="fixed right-10 bottom-10" />
