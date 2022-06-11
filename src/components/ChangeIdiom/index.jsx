@@ -15,10 +15,10 @@ export const ChangeIdiom = () => {
     localStorage.setItem('lng', 'en')
   }
   return (
-    <>
+    <div className="flex items-center">
           {(localStorage.getItem('lng') === 'es' || localStorage.getItem('lng') === undefined) && <div className="flex flex-row"><div className="mr-4 flex items-center"><EsIcon className="rounded-full w-5 h-5 mr-2" />Es</div><button className="mr-4 flex items-center grayscale transition hover:grayscale-0" onClick={changeIdiomEn}><EnIcon className="rounded-full w-5 h-5 mr-2" />En</button></div>}
           {(localStorage.getItem('lng') === 'en') && <div className="flex flex-row"><button className="mr-4 items-center flex grayscale transition hover:grayscale-0" onClick={changeIdiomEs}><EsIcon className="rounded-full w-5 h-5 mr-2" />Es</button><div className="mr-4 flex items-center"><EnIcon className="rounded-full w-5 h-5 mr-2" />En</div></div>}
-    </>
+    </div>
 
   )
 }
