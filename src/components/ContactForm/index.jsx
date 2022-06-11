@@ -3,10 +3,12 @@ import { TextAreaForm } from '../TextAreaForm/index.jsx'
 import { PopupCard } from '../PopupCard/index.jsx'
 import { useState } from 'react'
 import { sendMail } from '../../services/mailer.js'
+import { useTranslation } from 'react-i18next'
 
 export const ContactForm = () => {
   const [popupActive, setPopupActive] = useState(false)
   const [data, setData] = useState({ status: 400, msg: 'Error' })
+  const [t] = useTranslation('global')
 
   const togglePopup = () => {
     setPopupActive(true)
@@ -62,17 +64,17 @@ export const ContactForm = () => {
 
     setTimeout(() => {
       setData({ status: 400, msg: 'Error' })
-    }, 4000)
+    }, 6000)
   }
 
   return (
     <>
       <form onSubmit={onSubmit} className="flex flex-col gap-2 mt-10" noValidate>
-        <InputForm type="text" name="name" placeholder="Nombre" />
-        <InputForm type="email" name="from" placeholder="Email" />
-        <TextAreaForm name="text" placeholder="Texto" />
+        <InputForm type="text" name="name" placeholder={t('contact.form.name')} />
+        <InputForm type="email" name="from" placeholder={t('contact.form.email')} />
+        <TextAreaForm name="text" placeholder={t('contact.form.text')} />
         <div className="flex justify-end">
-          <InputForm type="submit" />
+          <InputForm type="submit" value={t('contact.form.send')}/>
         </div>
       </form>
       <PopupCard message={data.msg} status={data.status} active={popupActive} className="fixed right-10 bottom-10" />

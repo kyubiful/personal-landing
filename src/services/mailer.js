@@ -7,6 +7,6 @@ export const sendMail = (data) => {
     body: JSON.stringify(data)
   }
 
-  return fetch('https://kyubi-mailer.herokuapp.com/api/mail/send', options)
+  return fetch('https://kyubidev-mailer.up.railway.app/api/mail/send', options)
     .then(res => res.json())
 }
