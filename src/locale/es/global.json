@@ -1,0 +1,150 @@
+{
+  "menu": {
+    "hello": "hola.jsx",
+    "about": "sobre_mi.js",
+    "experience": "experiencia.html",
+    "proyects": "proyectos.ts",
+    "contact": "contacto.css"
+  },
+  "home": {
+    "hello": "Hola",
+    "name": "me llamo",
+    "developer": "Desarrollador Web"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software. Aficionado a los videojuegos️ y la música.",
+    "image": "/img/avatar.jpg",
+    "opinion": "Opiniones",
+    "opinions": [
+      {
+        "name": "David Jimenez",
+        "avatar": "/img/markuson.jpeg",
+        "company": "ESL España",
+        "companyUrl": "https://esl.gg",
+        "text": "Sergio es una persona comprometida y responsable. Su actitud en el ámbito laboral es excelente, adelantándose a los problemas y buscando soluciones para que el cliente siempre quede satisfecho. Él, es muy exigente consigo mismo por lo que siempre busca la mejor adaptación y perfección en su trabajo. Si buscas una persona que trate tu proyecto como si fuera suyo, Sergio es tu hombre."
+      },
+      {
+        "name": "Héctor Ramón",
+        "avatar": "/img/murciano.png",
+        "company": "Play Generations",
+        "companyUrl": "https://playgenerations.es",
+        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Iván Marín",
+        "avatar": "/img/ivanMistMeals.png",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Juán Marín",
+        "avatar": "/img/juanMistMeals.png",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Héctor Ramón",
+        "avatar": "/img/murciano.png",
+        "company": "Play Generations",
+        "companyUrl": "https://playgenerations.es",
+        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "David Jimenez",
+        "avatar": "/img/markuson.jpeg",
+        "company": "ESL España",
+        "companyUrl": "https://esl.gg",
+        "text": "Sergio es una persona comprometida y responsable. Su actitud en el ámbito laboral es excelente, adelantándose a los problemas y buscando soluciones para que el cliente siempre quede satisfecho. Él, es muy exigente consigo mismo por lo que siempre busca la mejor adaptación y perfección en su trabajo. Si buscas una persona que trate tu proyecto como si fuera suyo, Sergio es tu hombre."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "technologies": "Tecnologías",
+    "careers": "Vida laboral",
+    "jobs": [
+      {
+        "jobName": "League Ops Specialist",
+        "company": "ESL Gaming España",
+        "start": "2016",
+        "end": "2019"
+      },
+      {
+        "jobName": "Server Operator ESL España",
+        "company": "Autónomo",
+        "start": "2019",
+        "end": "Actualidad"
+      },
+      {
+        "jobName": "Live Monitoring Team ESL Global",
+        "company": "Autónomo",
+        "start": "2020",
+        "end": "Actualidad"
+      },
+      {
+        "jobName": "Web Developer",
+        "company": "Autónomo",
+        "start": "2021",
+        "end": "Actualidad"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "projects": [
+      {
+        "id": 0,
+        "name": "MistMeals",
+        "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración",
+        "imageUrl": "/img/mistmeals.png",
+        "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
+        "webUrl": "https://mistmeals.com",
+        "technologies": [
+          "Laravel",
+          "MySQL",
+          "AWS"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Web personal",
+        "text": "Laniding personal",
+        "imageUrl": "/img/kyubidev.png",
+        "gitHubUrl": "https://github.com/kyubiful/personal-landing",
+        "webUrl": "https://kyubidev.vercel.app",
+        "technologies": [
+          "ReactJS",
+          "TailwindCSS",
+          "Vercel"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Mail Api",
+        "text": "Api para envío de correo desde un formulario de contacto",
+        "imageUrl": "/img/mailer.png",
+        "gitHubUrl": "https://github.com/kyubiful/personal-mailer",
+        "webUrl": "",
+        "technologies": [
+          "NodeJS",
+          "Express",
+          "Nodemailer",
+          "Railway"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Si tienes otra petición o pregunta, no dudes en utilizar el formulario.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "text": "Texto",
+      "send": "Enviar"
+    }
+  }
+}
