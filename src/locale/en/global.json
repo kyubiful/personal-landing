@@ -14,7 +14,7 @@
   "about": {
     "title": "About me",
     "description": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. I have a great passion for software development. I love videogames️ and music.",
-    "image": "/img/avatar.jpg",
+    "image": "/img/kyubi.png",
     "opinion": "Opinions",
     "opinions": [
       {
@@ -98,9 +98,9 @@
       {
         "id": 0,
         "name": "MistMeals",
-        "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración",
+        "text": "Web application to offer healthy food delivery services, weekly menu generator and administration section",
         "imageUrl": "/img/mistmeals.png",
-        "gitHubUrl": "",
+        "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
         "webUrl": "https://mistmeals.com",
         "technologies": [
           "Laravel",
@@ -111,7 +111,7 @@
       {
         "id": 1,
         "name": "Personal Landing",
-        "text": "Landing personal lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "text": "Personal web to make myself known as well as to show my experience and projects both personal and those in which I have worked",
         "imageUrl": "/img/kyubidev.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-landing",
         "webUrl": "https://kyubidev.vercel.app",

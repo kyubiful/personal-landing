@@ -14,7 +14,7 @@
   "about": {
     "title": "Sobre mi",
     "description": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software. Aficionado a los videojuegos️ y la música.",
-    "image": "/img/avatar.jpg",
+    "image": "/img/kyubi.png",
     "opinion": "Opiniones",
     "opinions": [
       {
@@ -111,7 +111,7 @@
       {
         "id": 1,
         "name": "Web personal",
-        "text": "Laniding personal",
+        "text": "Web personal para darme a conocer así como mostrar mi experiencia y proyectos tanto personales como aquellos en los que he trabajado",
         "imageUrl": "/img/kyubidev.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-landing",
         "webUrl": "https://kyubidev.vercel.app",

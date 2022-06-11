@@ -4,6 +4,7 @@ import { JavaScriptLogo } from '../Logos/JavaScriptLogo.jsx'
 import { HTMLLogo } from '../Logos/HTMLLogo.jsx'
 import { TypeScriptLogo } from '../Logos/TypeScriptLogo.jsx'
 import { CSSLogo } from '../Logos/CSSLogo.jsx'
+import { ChangeIdiom } from '../ChangeIdiom/index.jsx'
 import { useTranslation } from 'react-i18next'
 
 export const Navbar = ({ ...props }) => {
@@ -32,7 +33,9 @@ export const Navbar = ({ ...props }) => {
           <CSSLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-900/100"/>
           {t('menu.contact')}
         </Tab>
-        <div className="shadow-[inset_0_-1px_0_#334155] w-full h-auto"></div>
+        <div className="shadow-[inset_0_-1px_0_#334155] w-full h-auto flex justify-end">
+          <ChangeIdiom />
+        </div>
       </ul>
     </nav>
   )

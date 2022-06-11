@@ -9,9 +9,11 @@ import { I18nextProvider } from 'react-i18next'
 import globalEs from './locale/es/global.json'
 import globalEn from './locale/en/global.json'
 
+const lng = localStorage.getItem('lng') || 'es'
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'es',
+  lng: lng,
   resources: {
     es: {
       global: globalEs

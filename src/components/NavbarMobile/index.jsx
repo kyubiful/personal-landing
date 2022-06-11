@@ -4,6 +4,7 @@ import { JavaScriptLogo } from '../Logos/JavaScriptLogo.jsx'
 import { HTMLLogo } from '../Logos/HTMLLogo.jsx'
 import { TypeScriptLogo } from '../Logos/TypeScriptLogo.jsx'
 import { CSSLogo } from '../Logos/CSSLogo.jsx'
+import { ChangeIdiom } from '../ChangeIdiom/index.jsx'
 import { useTranslation } from 'react-i18next'
 
 export const NavbarMobile = ({ isActive, setMenuMobileIsOpen, menuMobileIsOpen, ...props }) => {
@@ -38,6 +39,9 @@ export const NavbarMobile = ({ isActive, setMenuMobileIsOpen, menuMobileIsOpen, 
           <CSSLogo className="fill-slate-200 h-4 w-auto mr-2" background="fill-slate-900/100"/>
           {t('menu.contact')}
         </Tab>
+        <div className="flex justify-center mt-4">
+          <ChangeIdiom />
+        </div>
         <div className="shadow-[inset_0_-1px_0_#334155] w-full h-full"></div>
       </ul>
     </nav>
