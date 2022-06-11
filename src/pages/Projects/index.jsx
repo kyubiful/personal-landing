@@ -1,9 +1,13 @@
 import { Title } from '../../components/Title/index.jsx'
 import { Markup } from '../../components/Markup/index.jsx'
 import { ProjectCards } from '../../components/ProjectCards/index.jsx'
-import { PROJECTS } from '../../data/projects.js'
+import { useTranslation } from 'react-i18next'
 
 export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
+  const [t] = useTranslation('global')
+
+  const PROJECTS = t('projects.projects', { returnObjects: true })
+
   return (
     <div className="pb-2 pt-2 lg:pt-12 lg:pb-2 h-full flex flex-col">
       <div className="h-40 flex flex-col justify-between">
@@ -16,8 +20,8 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
           <Markup text="<h1>" className="pl-7 lg:pl-16" />
         </div>
       </div>
-      <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
-        <Title text="Proyectos" />
+      <div className="flex flex-col h-auto max-w-5xl w-full m-auto pr-6 pl-6 animate-fade-in">
+        <Title text={t('projects.title')} />
       </div>
       <div className="flex flex-col justify-between">
         <div>
@@ -35,7 +39,7 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
                     <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
-                <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
+                <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 pt-4 pb-4 animate-fade-in">
                   <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} imageUrl={project.imageUrl} />
                 </div>
                 <div className="flex flex-col justify-between">
@@ -53,7 +57,7 @@ export const Projects = ({ setMenuMobileIsOpen, menuMobileIsOpen }) => {
                     <Markup text="<div>" className="pl-9 lg:pl-20" />
                   </div>
                 </div>
-              <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 animate-fade-in">
+              <div className="flex flex-col h-auto max-w-6xl w-full m-auto pr-6 pl-6 pt-4 pb-4 animate-fade-in">
                 <ProjectCards index={index} name={project.name} text={project.text} gitHubUrl={project.gitHubUrl} webUrl={project.webUrl} technologies={project.technologies} imageUrl={project.imageUrl} />
               </div>
               <div className="flex flex-col justify-between">

@@ -7,7 +7,6 @@ export const ProjectCardLeft = ({ className, text, gitHubUrl, webUrl, technologi
     <div className={ 'flex h-80 justify-center ' + className}>
         <div className="flex flex-col items-start justify-center w-auto -mr-24">
           <div className="flex flex-col items-start">
-            <h3 className="text-sm">Proyecto</h3>
             <TextGradient text={name} className="text-lg" />
             <div className="px-4 py-3 m-auto h-28 max-w-lg w-full bg-slate-600 rounded-xl flex flex-col justify-between z-20">
               <p className="max-w-md text-sm w-screen">{text}</p>

@@ -1,0 +1,150 @@
+{
+  "menu": {
+    "hello": "hello.jsx",
+    "about": "about.js",
+    "experience": "experience.html",
+    "proyects": "proyects.ts",
+    "contact": "contact.css"
+  },
+  "home": {
+    "hello": "Hello",
+    "name": "my name is",
+    "developer": "Web Developer"
+  },
+  "about": {
+    "title": "About me",
+    "description": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. I have a great passion for software development. I love videogames️ and music.",
+    "image": "/img/avatar.jpg",
+    "opinion": "Opinions",
+    "opinions": [
+      {
+        "name": "David Jimenez",
+        "avatar": "/img/markuson.jpeg",
+        "company": "ESL Spain",
+        "companyUrl": "https://esl.gg",
+        "text": "Sergio is a committed and responsible person. His attitude in the work environment is excellent, anticipating problems and looking for solutions so that the customer is always satisfied. He is very demanding with himself so he always looks for the best adaptation and perfection in his work. If you are looking for a person who treats your project as if it were his own, Sergio is your man."
+      },
+      {
+        "name": "Héctor Ramón",
+        "avatar": "/img/murciano.png",
+        "company": "Play Generations",
+        "companyUrl": "https://playgenerations.es",
+        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Iván Marín",
+        "avatar": "/img/ivanMistMeals.png",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Juán Marín",
+        "avatar": "/img/juanMistMeals.png",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "Héctor Ramón",
+        "avatar": "/img/murciano.png",
+        "company": "Play Generations",
+        "companyUrl": "https://playgenerations.es",
+        "text": "Sergio a person asdasd asdasd asdasdasda asdasdasd"
+      },
+      {
+        "name": "David Jimenez",
+        "avatar": "/img/markuson.jpeg",
+        "company": "ESL España",
+        "companyUrl": "https://esl.gg",
+        "text": "Sergio is a committed and responsible person. His attitude in the work environment is excellent, anticipating problems and looking for solutions so that the customer is always satisfied. He is very demanding with himself so he always looks for the best adaptation and perfection in his work. If you are looking for a person who treats your project as if it were his own, Sergio is your man."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "technologies": "Technologies",
+    "careers": "Careers",
+    "jobs": [
+      {
+        "jobName": "League Ops Specialist",
+        "company": "ESL Gaming España",
+        "start": "2016",
+        "end": "2019"
+      },
+      {
+        "jobName": "Server Operator ESL España",
+        "company": "Freelance",
+        "start": "2019",
+        "end": "Current"
+      },
+      {
+        "jobName": "Live Monitoring Team ESL Global",
+        "company": "Freelance",
+        "start": "2020",
+        "end": "Current"
+      },
+      {
+        "jobName": "Web Developer",
+        "company": "Autónomo",
+        "start": "2021",
+        "end": "Actualidad"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "projects": [
+      {
+        "id": 0,
+        "name": "MistMeals",
+        "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración",
+        "imageUrl": "/img/mistmeals.png",
+        "gitHubUrl": "",
+        "webUrl": "https://mistmeals.com",
+        "technologies": [
+          "Laravel",
+          "MySQL",
+          "AWS"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Personal Landing",
+        "text": "Landing personal lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "imageUrl": "/img/kyubidev.png",
+        "gitHubUrl": "https://github.com/kyubiful/personal-landing",
+        "webUrl": "https://kyubidev.vercel.app",
+        "technologies": [
+          "ReactJS",
+          "TailwindCSS",
+          "Vercel"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Mail Api",
+        "text": "Api for sending mail from a contact form",
+        "imageUrl": "/img/mailer.png",
+        "gitHubUrl": "https://github.com/kyubiful/personal-mailer",
+        "webUrl": "",
+        "technologies": [
+          "NodeJS",
+          "Express",
+          "Nodemailer",
+          "Railway"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "If you have any other request or question, please feel free to use the form.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "text": "Text",
+      "send": "Send"
+    }
+  }
+}

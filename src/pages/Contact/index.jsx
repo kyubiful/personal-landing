@@ -1,8 +1,11 @@
 import { ContactForm } from '../../components/ContactForm/index.jsx'
 import { Title } from '../../components/Title/index.jsx'
 import { Markup } from '../../components/Markup/index.jsx'
+import { useTranslation } from 'react-i18next'
 
 export const Contact = () => {
+  const [t] = useTranslation('global')
+
   return (
     <div className="pb-2 pt-2 lg:pt-12 lg:pb-2 h-full flex flex-col">
       <div className="h-40 flex flex-col justify-between">
@@ -15,7 +18,7 @@ export const Contact = () => {
         </div>
       </div>
       <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6 animate-fade-in">
-        <Title text="Contacto" />
+        <Title text={t('contact.title')} />
       </div>
       <div className="flex flex-col justify-between">
         <div>
@@ -25,7 +28,7 @@ export const Contact = () => {
           <Markup text="<p>" className="pl-5 lg:pl-14" />
         </div>
         <div className="flex flex-col h-auto max-w-4xl w-full m-auto pr-6 pl-6 animate-fade-in">
-          <p className="text-sm">Si tienes otra petición o pregunta, no dudes en utilizar el formulario.</p>
+          <p className="text-sm">{t('contact.text')}</p>
         </div>
         <div>
           <Markup text="</p>" className="pl-5 lg:pl-14" />
