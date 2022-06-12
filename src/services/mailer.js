@@ -7,6 +7,6 @@ export const sendMail = (data) => {
     body: JSON.stringify(data)
   }
 
-  return fetch('https://kyubidev-mailer.up.railway.app/api/mail/send', options)
+  return fetch(`${import.meta.env.VITE_MAILER_URL}/api/mail/send`, options)
     .then(res => res.json())
 }
