@@ -86,7 +86,7 @@
       },
       {
         "jobName": "Web Developer",
-        "company": "Autónomo",
+        "company": "Freelance",
         "start": "2021",
         "end": "Actualidad"
       }
@@ -118,7 +118,8 @@
         "technologies": [
           "ReactJS",
           "TailwindCSS",
-          "Vercel"
+          "Vercel",
+          "Vitest"
         ]
       },
       {
@@ -132,7 +133,8 @@
           "NodeJS",
           "Express",
           "Nodemailer",
-          "Railway"
+          "Railway",
+          "Jest"
         ]
       }
     ]
@@ -145,6 +147,14 @@
       "email": "Email",
       "text": "Text",
       "send": "Send"
+    }
+  },
+  "errors": {
+    "form": {
+      "emptyName": "Error: Name field is empty",
+      "emptyEmail": "Error: Email field is empty",
+      "incorrectEmail": "Error: Incorrect Email",
+      "emptyText": "Error: Text field is empty"
     }
   }
 }

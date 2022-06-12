@@ -118,7 +118,8 @@
         "technologies": [
           "ReactJS",
           "TailwindCSS",
-          "Vercel"
+          "Vercel",
+          "Vitest"
         ]
       },
       {
@@ -132,7 +133,8 @@
           "NodeJS",
           "Express",
           "Nodemailer",
-          "Railway"
+          "Railway",
+          "Jest"
         ]
       }
     ]
@@ -145,6 +147,14 @@
       "email": "Email",
       "text": "Texto",
       "send": "Enviar"
+    }
+  },
+  "errors": {
+    "form": {
+      "emptyName": "Error: El campo del nombre está vacío",
+      "emptyEmail": "Error: El campo del email está vacío",
+      "incorrectEmail": "Error: Email incorrecto",
+      "emptyText": "Error: El campo del texto está vacío"
     }
   }
 }
