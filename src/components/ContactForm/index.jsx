@@ -19,22 +19,22 @@ export const ContactForm = () => {
 
   const verifyForm = (event) => {
     if (event.target.name.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del nombre está vacío' })
+      setData({ status: 400, msg: t('errors.form.emptyName') })
       togglePopup()
       return null
     }
     if (event.target.from.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del email está vacío' })
+      setData({ status: 400, msg: t('errors.form.emptyEmail') })
       togglePopup()
       return null
     }
     if (event.target.from.value.length !== 0 && event.target.from.validity.valid === false) {
-      setData({ status: 400, msg: 'Error: Email incorrecto' })
+      setData({ status: 400, msg: t('errors.form.incorrectEmail') })
       togglePopup()
       return null
     }
     if (event.target.text.value.length === 0) {
-      setData({ status: 400, msg: 'Error: El campo del texto está vacío' })
+      setData({ status: 400, msg: t('errors.form.emptyText') })
       togglePopup()
       return null
     }
@@ -48,7 +48,8 @@ export const ContactForm = () => {
       return null
     }
 
-    formData.to = 'ser.zabala@gmail.com'
+    formData.to = import.meta.env.VITE_MAILER_TO
+    formData.lng = localStorage.getItem('lng') || 'es'
 
     sendMail(formData)
       .then(data => {
@@ -57,9 +58,8 @@ export const ContactForm = () => {
           e.target.name.value = ''
           e.target.from.value = ''
           e.target.text.value = ''
-
-          togglePopup()
         }
+        togglePopup()
       })
 
     setTimeout(() => {
