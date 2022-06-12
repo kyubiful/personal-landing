@@ -16,7 +16,7 @@ export const OpinionsMobile = ({ opinions }) => {
         }
       </ul>
     </div>
-    <div className="inset-x-0 bottom-0 bg-gradient-to-t from-white h-60 -ml-5 -mr-5 pointer-events-none dark:from-slate-900 sticky -mt-60 transition-opacity duration-300 opacity-100"></div>
+    <div className="inset-x-0 bottom-0 bg-gradient-to-t from-white h-60 -ml-5 -mr-5 pointer-events-none from-slate-900 sticky -mt-60 transition-opacity duration-300 opacity-100"></div>
     </>
   )
 }
