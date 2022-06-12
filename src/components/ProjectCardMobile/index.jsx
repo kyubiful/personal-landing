@@ -8,7 +8,9 @@ export const ProjectCardMobile = ({ className, index, name, text, gitHubUrl, web
       <TextGradient text={name} className="text-lg" />
       <div className="max-w-sm relative w-full group p-1 h-52">
           <div className="absolute inset-0.5 group-hover:inset-0 dark:inset-1 dark:group-hover:inset-0.5 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-300 opacity-50 group-hover:opacity-60 transition duration-900 rounded-xl blur"/>
-          <img src={imageUrl} className="transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0" />
+          {
+            webUrl !== '' ? <a href={webUrl}><img src={imageUrl} className="transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0" /></a> : <img src={imageUrl} className="transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0" />
+          }
         </div>
         <div className="flex flex-col items-start justify-center w-auto -mt-20 max-w-sm items-center p-4">
           <div className="flex flex-col items-end">

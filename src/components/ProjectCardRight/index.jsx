@@ -7,7 +7,9 @@ export const ProjectCardRight = ({ className, name, text, gitHubUrl, webUrl, tec
     <div className={ 'flex h-80 justify-center ' + className}>
         <div className="max-w-lg relative w-full group p-1">
           <div className="absolute inset-0.5 group-hover:inset-0 dark:inset-1 dark:group-hover:inset-0.5 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-300 opacity-50 group-hover:opacity-60 transition duration-900 rounded-xl blur"/>
-          <img src={imageUrl} className='transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0' />
+          {
+            webUrl !== '' ? <a href={webUrl}><img src={imageUrl} className='transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0' /></a> : <img src={imageUrl} className='transform transition-all rounded-xl w-full bg-slate-400 h-full grayscale hover:grayscale-0' />
+          }
         </div>
         <div className="flex flex-col items-start justify-center w-auto -ml-24">
           <div className="flex flex-col items-end">
