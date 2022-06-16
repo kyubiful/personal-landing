@@ -10,7 +10,8 @@ export const OpinionCard = ({ name, company, text, companyUrl, avatar }) => {
             <div className="ml-4">
               <h3 className="text-m">{name}</h3>
               <h5 className="text-sm">
-                <a data-testid="companyUrl" href={companyUrl} target="_blank" rel="noreferrer">{company}</a>
+                { companyUrl ? <a className="underline" data-testid="companyUrl" href={companyUrl} target="_blank" rel="noreferrer">{company}</a> : <p>{company}</p> }
+
               </h5>
             </div>
           </div>
