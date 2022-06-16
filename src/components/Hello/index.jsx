@@ -21,7 +21,7 @@ export const Hello = () => {
       </div>
       <div className="flex flex-col justify-center items-center content-center h-auto max-w-4xl w-full m-auto pt-2 pb-2">
         <div>
-          <p className="text-xl md:text-2xl lg:text-2xl animate-fade-in">{t('home.hello')} <span className="text-3xl md:text-4xl lg:text-5xl inline-block animate-waving-hand [animation-delay:4.5s]">👋🏻</span>, {t('home.name')}</p>
+          <p className="text-xl md:text-2xl lg:text-2xl animate-fade-in">{t('home.hello')} <span className="text-3xl md:text-4xl lg:text-5xl inline-block animate-waving-hand [animation-delay:4.5s]"><img className="h-8 w-8 md:h-12 md:w-12 lg:h-12 lg:w-12" src="img/hi.png"/></span>, {t('home.name')}</p>
           <div className="w-[340px] md:w-[783px] lg:w-[783px] text-center animate-display-text">
             <TextGradient text="Sergio Zabala" className="text-4xl md:text-8xl lg:text-8xl leading-tight tracking-normal md:leading-tight lg:leading-tight block whitespace-nowrap border-r-4 w-[14ch] animate-writing [animation-delay:1.5s]"/>
           </div>
