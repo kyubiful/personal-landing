@@ -4,6 +4,9 @@ import { useTranslation } from 'react-i18next'
 export const OpinionsTablet = ({ opinions }) => {
   const [t] = useTranslation('global')
 
+  const left = [0, 3]
+  const right = [1, 2, 4]
+
   return (
     <>
       <h2 className="mt-20 mb-6 text-2xl">{t('about.opinion')}</h2>
@@ -11,8 +14,8 @@ export const OpinionsTablet = ({ opinions }) => {
         <ul>
           {
             opinions.map((opinion, index) => {
-              if (index % 2 === 0) {
-                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+              if (left.includes(index)) {
+                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
               }
               return null
             })
@@ -21,8 +24,8 @@ export const OpinionsTablet = ({ opinions }) => {
         <ul>
           {
             opinions.map((opinion, index) => {
-              if (index % 2 === 1) {
-                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+              if (right.includes(index)) {
+                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
               }
               return null
             })

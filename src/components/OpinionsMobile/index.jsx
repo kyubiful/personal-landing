@@ -11,7 +11,7 @@ export const OpinionsMobile = ({ opinions }) => {
       <ul>
         {
           opinions.map((opinion, index) => {
-            return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+            return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
           })
         }
       </ul>

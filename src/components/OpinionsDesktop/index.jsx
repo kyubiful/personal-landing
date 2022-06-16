@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next'
 export const OpinionsDesktop = ({ opinions }) => {
   const [t] = useTranslation('global')
 
-  let i = 0
-  let x = 1
-  let z = 2
+  const left = [4, 1]
+  const center = [0]
+  const right = [2, 3]
 
   return (
     <>
@@ -15,9 +15,8 @@ export const OpinionsDesktop = ({ opinions }) => {
         <ul>
           {
             opinions.map((opinion, index) => {
-              if (index === 0 || index === i) {
-                i = index + 3
-                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+              if (left.includes(index)) {
+                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
               }
               return null
             })
@@ -26,9 +25,8 @@ export const OpinionsDesktop = ({ opinions }) => {
         <ul>
           {
             opinions.map((opinion, index) => {
-              if (index === 1 || index === x) {
-                x = index + 3
-                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+              if (center.includes(index)) {
+                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
               }
               return null
             })
@@ -37,9 +35,8 @@ export const OpinionsDesktop = ({ opinions }) => {
         <ul>
           {
             opinions.map((opinion, index) => {
-              if (index === 2 || index === z) {
-                z = index + 3
-                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.url}/>
+              if (right.includes(index)) {
+                return <OpinionCard key={index} name={opinion.name} company={opinion.company} text={opinion.text} avatar={opinion.avatar} companyUrl={opinion.companyUrl}/>
               }
               return null
             })
