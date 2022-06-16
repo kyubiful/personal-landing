@@ -13,10 +13,24 @@
   },
   "about": {
     "title": "Sobre mi",
-    "description": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software. Aficionado a los videojuegos️ y la música.",
+    "description": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software 🧑🏻‍💻. Me encanta aprender y mejorar mis habilidades. Cuando no estoy programando me podrás encontrar jugando a algún videojuego 🎮 o tocando mi guitarra 🎸.",
     "image": "/img/kyubi.png",
     "opinion": "Opiniones",
     "opinions": [
+      {
+        "name": "Clara Ortíz",
+        "avatar": "/img/clara.jpeg",
+        "company": "Desarrolladora",
+        "companyUrl": "",
+        "text": "Ha sido un placer trabajar con Sergio, es una persona que nunca ser rinde, muy profesional, con los objetivos claros, perseverante que demuestra su pasión por la programación. Se nota su gran capacidad, está constantemente aprendiendo lenguajes y metodologías nuevas, ademas de estar proponiendo ideas para la aplicación final. La dedicación que pone en cada proyecto son increíbles, habiendo sacado proyectos complejos de forma autodidacta. Es un encanto trabajar con él, resaltaría sus ganas de ayudar a el equipo, ya que he podido desarrollar más conocimientos sobre nuevas tecnologías gracias a su ayuda. ¡Cuando Sergio está en tu equipo sabes que todo saldrá bien!"
+      },
+      {
+        "name": "Juan José Marín",
+        "avatar": "/img/juanMistMeals.jpeg",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Extraordinaria la colaboración con Sergio. Una actitud muy positiva y compromiso total con el proyecto que hacen que todo lo que le pedíamos fuera posible. No habríamos podido poner nuestro ecommerce en marcha sin él."
+      },
       {
         "name": "David Jimenez",
         "avatar": "/img/markuson.jpeg",
@@ -25,39 +39,18 @@
         "text": "Sergio es una persona comprometida y responsable. Su actitud en el ámbito laboral es excelente, adelantándose a los problemas y buscando soluciones para que el cliente siempre quede satisfecho. Él, es muy exigente consigo mismo por lo que siempre busca la mejor adaptación y perfección en su trabajo. Si buscas una persona que trate tu proyecto como si fuera suyo, Sergio es tu hombre."
       },
       {
-        "name": "Héctor Ramón",
+        "name": "Héctor Pula",
         "avatar": "/img/murciano.png",
         "company": "Play Generations",
         "companyUrl": "https://playgenerations.es",
-        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
+        "text": "Trabajar con Sergio es sinónimo de seguridad, demuestra pasión por su trabajo y sabe resolver cualquier problema que pueda surgir tanto interno como con el cliente, siempre da el 110% de si mismo."
       },
       {
         "name": "Iván Marín",
         "avatar": "/img/ivanMistMeals.png",
         "company": "MistMeals",
         "companyUrl": "https://mistmeals.com",
-        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "Juán Marín",
-        "avatar": "/img/juanMistMeals.png",
-        "company": "MistMeals",
-        "companyUrl": "https://mistmeals.com",
-        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "Héctor Ramón",
-        "avatar": "/img/murciano.png",
-        "company": "Play Generations",
-        "companyUrl": "https://playgenerations.es",
-        "text": "Sergio es una persona asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "David Jimenez",
-        "avatar": "/img/markuson.jpeg",
-        "company": "ESL España",
-        "companyUrl": "https://esl.gg",
-        "text": "Sergio es una persona comprometida y responsable. Su actitud en el ámbito laboral es excelente, adelantándose a los problemas y buscando soluciones para que el cliente siempre quede satisfecho. Él, es muy exigente consigo mismo por lo que siempre busca la mejor adaptación y perfección en su trabajo. Si buscas una persona que trate tu proyecto como si fuera suyo, Sergio es tu hombre."
+        "text": "Tras una debacle con una empresa que sólo fue capaz de negarme cada cosa que les pedía, hablé con Sergio y fue todo lo contrario. Su respuesta siempre era 'se puede hacer, sólo hay que buscar la forma', y siempre la encontraba. Da gusto trabajar con alguien así, tan dispuesto y con actitud de sacar las cosas adelante. Se nota que disfruta su trabajo y se enfrenta a cada reto que se le presenta."
       }
     ]
   },
@@ -98,7 +91,7 @@
       {
         "id": 0,
         "name": "MistMeals",
-        "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración",
+        "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración.",
         "imageUrl": "/img/mistmeals.png",
         "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
         "webUrl": "https://mistmeals.com",
@@ -111,7 +104,7 @@
       {
         "id": 1,
         "name": "Web personal",
-        "text": "Web personal para darme a conocer así como mostrar mi experiencia y proyectos tanto personales como aquellos en los que he trabajado",
+        "text": "Web personal para darme a conocer así como mostrar mi experiencia y proyectos tanto personales como aquellos en los que he trabajado.",
         "imageUrl": "/img/kyubidev.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-landing",
         "webUrl": "https://kyubidev.vercel.app",
@@ -125,7 +118,7 @@
       {
         "id": 2,
         "name": "Mail Api",
-        "text": "Api para envío de correo desde un formulario de contacto",
+        "text": "Microservicio creado para el envío de correos desde un formulario de contacto.",
         "imageUrl": "/img/mailer.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-mailer",
         "webUrl": "",
@@ -141,7 +134,7 @@
   },
   "contact": {
     "title": "Contacto",
-    "text": "Si tienes otra petición o pregunta, no dudes en utilizar el formulario.",
+    "text": "Si tienes una petición o pregunta, no dudes en utilizar el formulario.",
     "form": {
       "name": "Nombre",
       "email": "Email",

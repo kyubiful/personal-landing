@@ -13,10 +13,24 @@
   },
   "about": {
     "title": "About me",
-    "description": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. I have a great passion for software development. I love videogames️ and music.",
+    "description": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. I have a great passion for software development 🧑🏻‍💻. I love to learn and improve my skills. When I'm not programming you can find me playing a video game 🎮 or playing my guitar 🎸.",
     "image": "/img/kyubi.png",
     "opinion": "Opinions",
     "opinions": [
+      {
+        "name": "Clara Ortíz",
+        "avatar": "/img/clara.jpeg",
+        "company": "Developer",
+        "companyUrl": "",
+        "text": "It has been a pleasure to work with Sergio, he is a person who never gives up, very professional, with clear objectives, perseverant and shows his passion for programming. You can see his great capacity, he is constantly learning new languages and methodologies, besides proposing ideas for the final application. The dedication he puts into each project is incredible, having completed complex projects in a self-taught way. It is a pleasure to work with him, I would highlight his desire to help the team, as I have been able to develop more knowledge about new technologies thanks to his help. When Sergio is in your team you know that everything will be fine!"
+      },
+      {
+        "name": "Juan José Marín",
+        "avatar": "/img/juanMistMeals.jpeg",
+        "company": "MistMeals",
+        "companyUrl": "https://mistmeals.com",
+        "text": "Extraordinary collaboration with Sergio. A very positive attitude and total commitment to the project that made everything we asked him to do possible. We would not have been able to start our ecommerce without him."
+      },
       {
         "name": "David Jimenez",
         "avatar": "/img/markuson.jpeg",
@@ -25,39 +39,18 @@
         "text": "Sergio is a committed and responsible person. His attitude in the work environment is excellent, anticipating problems and looking for solutions so that the customer is always satisfied. He is very demanding with himself so he always looks for the best adaptation and perfection in his work. If you are looking for a person who treats your project as if it were his own, Sergio is your man."
       },
       {
-        "name": "Héctor Ramón",
+        "name": "Héctor Pula",
         "avatar": "/img/murciano.png",
         "company": "Play Generations",
         "companyUrl": "https://playgenerations.es",
-        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
+        "text": "Working with Sergio is synonymous with security, he shows passion for his work and knows how to solve any problem that may arise both internally and with the client, he always gives 110% of himself."
       },
       {
         "name": "Iván Marín",
         "avatar": "/img/ivanMistMeals.png",
         "company": "MistMeals",
         "companyUrl": "https://mistmeals.com",
-        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "Juán Marín",
-        "avatar": "/img/juanMistMeals.png",
-        "company": "MistMeals",
-        "companyUrl": "https://mistmeals.com",
-        "text": "Sergio is a person asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "Héctor Ramón",
-        "avatar": "/img/murciano.png",
-        "company": "Play Generations",
-        "companyUrl": "https://playgenerations.es",
-        "text": "Sergio a person asdasd asdasd asdasdasda asdasdasd"
-      },
-      {
-        "name": "David Jimenez",
-        "avatar": "/img/markuson.jpeg",
-        "company": "ESL España",
-        "companyUrl": "https://esl.gg",
-        "text": "Sergio is a committed and responsible person. His attitude in the work environment is excellent, anticipating problems and looking for solutions so that the customer is always satisfied. He is very demanding with himself so he always looks for the best adaptation and perfection in his work. If you are looking for a person who treats your project as if it were his own, Sergio is your man."
+        "text": "After a debacle with a company that was only able to deny me every single thing I asked for, I talked to Sergio and it was the opposite. His answer was always 'it can be done, you just have to find a way', and he always found it. It's a pleasure to work with someone like that, so willing and with the attitude to get things done. You can tell he enjoys his work and faces every challenge that comes his way."
       }
     ]
   },
@@ -98,7 +91,7 @@
       {
         "id": 0,
         "name": "MistMeals",
-        "text": "Web application to offer healthy food delivery services, weekly menu generator and administration section",
+        "text": "Web application to offer healthy food delivery services, weekly menu generator and administration section.",
         "imageUrl": "/img/mistmeals.png",
         "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
         "webUrl": "https://mistmeals.com",
@@ -111,7 +104,7 @@
       {
         "id": 1,
         "name": "Personal Landing",
-        "text": "Personal web to make myself known as well as to show my experience and projects both personal and those in which I have worked",
+        "text": "Personal web to make myself known as well as to show my experience and projects both personal and those in which I have worked.",
         "imageUrl": "/img/kyubidev.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-landing",
         "webUrl": "https://kyubidev.vercel.app",
@@ -125,7 +118,7 @@
       {
         "id": 2,
         "name": "Mail Api",
-        "text": "Api for sending mail from a contact form",
+        "text": "Microservice created for sending mails from a contact form.",
         "imageUrl": "/img/mailer.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-mailer",
         "webUrl": "",
@@ -141,7 +134,7 @@
   },
   "contact": {
     "title": "Contact",
-    "text": "If you have any other request or question, please feel free to use the form.",
+    "text": "If you have any request or question, please feel free to use the form.",
     "form": {
       "name": "Name",
       "email": "Email",
