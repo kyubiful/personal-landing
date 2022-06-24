@@ -9,11 +9,13 @@
   "home": {
     "hello": "Hello",
     "name": "my name is",
-    "developer": "Web Developer"
+    "developer": "Web Developer",
+    "pageDescription": "My name is Sergio Zabala, and I'm a web developer based in Madrid, Spain. I have a great passion for software development 🧑🏻‍💻. I love to learn and improve my skills."
   },
   "about": {
     "title": "About me",
     "description": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. I have a great passion for software development 🧑🏻‍💻. I love to learn and improve my skills. When I'm not programming you can find me playing a video game 🎮 or playing my guitar 🎸.",
+    "pageDescription": "My name is Sergio Zabala, and I'm a web developer based in Madrid, Spain. Here you can find a brief presentation of me and opinions of people who have worked with me.",
     "image": "/img/kyubi.png",
     "opinion": "Opinions",
     "opinions": [
@@ -58,6 +60,7 @@
     "title": "Experience",
     "technologies": "Technologies",
     "careers": "Careers",
+    "pageDescription": "My name is Sergio Zabala, and I am a web developer based in Madrid, Spain. Here you can find both the technologies with which I have experience and the last sites I have worked on.",
     "jobs": [
       {
         "jobName": "League Ops Specialist",
@@ -87,6 +90,7 @@
   },
   "projects": {
     "title": "Projects",
+    "pageDescription": "My name is Sergio Zabala, and I'm a web developer based in Madrid, Spain. Here you can find some of the projects I have worked on.",
     "projects": [
       {
         "id": 0,
@@ -135,6 +139,7 @@
   "contact": {
     "title": "Contact",
     "text": "If you have any request or question, please feel free to use the form.",
+    "pageDescription": "My name is Sergio Zabala, and I'm a web developer based in Madrid, Spain. If you have any request or question here you can ask it.",
     "form": {
       "name": "Name",
       "email": "Email",

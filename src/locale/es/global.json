@@ -9,11 +9,13 @@
   "home": {
     "hello": "Hola",
     "name": "me llamo",
-    "developer": "Desarrollador Web"
+    "developer": "Desarrollador Web",
+    "pageDescription": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software 🧑🏻‍💻. Me encanta aprender y mejorar mis habilidades."
   },
   "about": {
     "title": "Sobre mi",
     "description": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Tengo una gran pasión por el desarrollo de software 🧑🏻‍💻. Me encanta aprender y mejorar mis habilidades. Cuando no estoy programando me podrás encontrar jugando a algún videojuego 🎮 o tocando mi guitarra 🎸.",
+    "pageDescription": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Aquí podrás encontrar una breve presentación sobre mí y opiniones de personas que han trabajado conmigo.",
     "image": "/img/kyubi.png",
     "opinion": "Opiniones",
     "opinions": [
@@ -58,6 +60,7 @@
     "title": "Experiencia",
     "technologies": "Tecnologías",
     "careers": "Vida laboral",
+    "pageDescription": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Aquí podrás encontrar tanto las tecnologías con las cuales tengo experiencia tanto los últimos sitios en los que he trabajado.",
     "jobs": [
       {
         "jobName": "League Ops Specialist",
@@ -87,6 +90,7 @@
   },
   "projects": {
     "title": "Proyectos",
+    "pageDescription": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Aquí podrás encontrar algunos proyectos en los que he trabajado.",
     "projects": [
       {
         "id": 0,
@@ -135,6 +139,7 @@
   "contact": {
     "title": "Contacto",
     "text": "Si tienes una petición o pregunta, no dudes en utilizar el formulario.",
+    "pageDescription": "Mi nombre es Sergio Zabala, y soy un desarrollador web residente en Madrid, España. Si tienes alguna petición o pregunta aquí puedes realizarla.",
     "form": {
       "name": "Nombre",
       "email": "Email",
