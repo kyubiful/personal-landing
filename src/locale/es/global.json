@@ -98,7 +98,7 @@
         "text": "Aplicación web para ofrecer servicios de comida sana a domicilio, generador de menú semanal y apartado de administración.",
         "imageUrl": "/img/mistmeals.png",
         "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
-        "webUrl": "https://mistmeals.com",
+        "webUrl": "",
         "technologies": [
           "Laravel",
           "MySQL",
@@ -107,11 +107,25 @@
       },
       {
         "id": 1,
+        "name": "Kyubidex",
+        "text": "Proyecto personal de una pokedex usando la pokeapi con fines de aprendizaje.",
+        "imageUrl": "/img/kyubidex.png",
+        "gitHubUrl": "https://github.com/kyubiful/kyubidex",
+        "webUrl": "https://kyubidex.sergiozabala.dev",
+        "technologies": [
+          "NextJS",
+          "Redux",
+          "CSSModules",
+          "Vercel"
+        ]
+      },
+      {
+        "id": 2,
         "name": "Web personal",
         "text": "Web personal para darme a conocer así como mostrar mi experiencia y proyectos tanto personales como aquellos en los que he trabajado.",
         "imageUrl": "/img/kyubidev.png",
         "gitHubUrl": "https://github.com/kyubiful/personal-landing",
-        "webUrl": "https://kyubidev.vercel.app",
+        "webUrl": "https://sergiozabala.dev",
         "technologies": [
           "ReactJS",
           "TailwindCSS",
@@ -120,7 +134,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Mail Api",
         "text": "Microservicio creado para el envío de correos desde un formulario de contacto.",
         "imageUrl": "/img/mailer.png",

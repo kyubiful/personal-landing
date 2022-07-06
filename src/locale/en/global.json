@@ -107,6 +107,20 @@
       },
       {
         "id": 1,
+        "name": "Kyubidex",
+        "text": "Personal project of a pokedex using the pokeapi for learning purposes.",
+        "imageUrl": "/img/kyubidex.png",
+        "gitHubUrl": "https://github.com/kyubiful/kyubidex",
+        "webUrl": "https://kyubidex.sergiozabala.dev",
+        "technologies": [
+          "NextJS",
+          "Redux",
+          "CSSModules",
+          "Vercel"
+        ]
+      },
+      {
+        "id": 2,
         "name": "Personal Landing",
         "text": "Personal web to make myself known as well as to show my experience and projects both personal and those in which I have worked.",
         "imageUrl": "/img/kyubidev.png",
@@ -120,7 +134,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Mail Api",
         "text": "Microservice created for sending mails from a contact form.",
         "imageUrl": "/img/mailer.png",
