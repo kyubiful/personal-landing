@@ -97,10 +97,10 @@
         "name": "MistMeals",
         "text": "Web application to offer healthy food delivery services, weekly menu generator and administration section.",
         "imageUrl": "/img/mistmeals.png",
-        "gitHubUrl": "https://github.com/kyubiful/mistmealsWeb",
-        "webUrl": "https://mistmeals.com",
+        "gitHubUrl": "",
+        "webUrl": "",
         "technologies": [
-          "Laravel",
+          "ReactJS",
           "MySQL",
           "AWS"
         ]
